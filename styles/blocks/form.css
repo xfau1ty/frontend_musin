@@ -1,0 +1,117 @@
+/* === Modal Window (форма обратной связи) === */
+.contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* скрыто по умолчанию */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .contact-modal__wrapper {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-modal__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .contact-modal__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .contact-modal__form-group {
+    margin-bottom: 25px;
+  }
+  
+  .contact-modal__form-group label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .contact-modal__form-group input,
+  .contact-modal__form-group textarea {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-modal__form-group input:focus,
+  .contact-modal__form-group textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+  }
+  
+  .contact-modal__form-group textarea {
+    height: 180px;
+    resize: none;
+  }
+  
+  .contact-modal__submit-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-modal__submit-btn:hover {
+    background-color: #e03e3e;
+  }
+  
+  /* === Мобильная адаптация === */
+  @media (max-width: 768px) {
+    .contact-modal__wrapper {
+      padding: 30px 25px;
+    }
+  
+    .contact-modal__title {
+      font-size: 28px;
+    }
+  
+    .contact-modal__form-group {
+      margin-bottom: 20px;
+    }
+  
+    .contact-modal__submit-btn {
+      padding: 12px 25px;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+/* Нормализация стилей */
+@import "base/normalize.css";
+@import "base/global.css";
+
+/* Основные блоки */
+@import "blocks/preloader.css";
+@import "blocks/header.css";
+@import "blocks/form.css";
+@import "blocks/hero.css";
+@import "blocks/about.css";
+@import "blocks/services.css";
+@import "blocks/portfolio.css";
+@import "blocks/clients.css";
+@import "blocks/testimonials.css";
+@import "blocks/book-meeting.css";
+@import "blocks/certifications.css";
+@import "blocks/footer.css";

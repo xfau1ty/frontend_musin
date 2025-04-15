@@ -1,0 +1,114 @@
+.book-meeting {
+  padding: 60px 40px;
+  background: linear-gradient(90deg, #1a1a1a 0%, #3a1c1c 100%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* для мобильной адаптивности */
+}
+
+.book-meeting__content {
+  max-width: 35%;
+  flex: 1;
+}
+
+.book-meeting__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.book-meeting__title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ff4d4d;
+  display: block;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.book-meeting__text {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.book-meeting__form {
+  flex: 1.5;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-meeting__input,
+.book-meeting__textarea {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.book-meeting__input::placeholder,
+.book-meeting__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+.book-meeting__input:focus,
+.book-meeting__textarea:focus {
+  outline: none;
+  border-color: #ff4d4d;
+}
+
+.book-meeting__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.book-meeting__btn {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff4d4d, #e04343);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Убираем ненужные элементы */
+.book-meeting__slider,
+.book-meeting__card,
+.book-meeting__card-avatar,
+.book-meeting__card-name,
+.book-meeting__card-quote,
+.book-meeting__card-logo,
+.book-meeting__nav,
+.book-meeting__nav-btn,
+.book-meeting__nav-btn img {
+  display: none;
+}
+
+/* Адаптив: для мобильных */
+@media (max-width: 768px) {
+  .book-meeting {
+    flex-direction: column;
+  }
+
+  .book-meeting__content,
+  .book-meeting__form {
+    max-width: 100%;
+  }
+
+  .book-meeting__btn {
+    align-self: stretch;
+  }
+}

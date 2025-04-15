@@ -1,0 +1,178 @@
+.footer {
+  position: relative;
+  background-color: #000;
+  color: #ccc;
+  font-family: 'Inter', sans-serif;
+  padding-top: 80px;
+  overflow: visible;
+}
+
+/* ЛОГОТИП */
+.footer__floating-logo {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  z-index: 10;
+  background-color: #000000;
+  padding: 20px 50px;
+  border-radius: 50%; /* Круглая форма */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Мягкая тень */
+  transform: scale(1); /* Начальный размер */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+}
+
+.footer__floating-logo img {
+  height: 100px; /* Увеличиваем логотип */
+  width: auto;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Контакты */
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Увеличиваем расстояние между контактами */
+}
+
+.footer__contact p {
+  margin: 10px 0;
+  font-size: 16px; /* Увеличиваем шрифт */
+  color: #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact span {
+  color: #ff4d4d;
+  margin-right: 10px; /* Увеличиваем расстояние */
+  font-size: 18px; /* Увеличиваем иконки */
+}
+
+/* Навигация и Подписка */
+.footer__nav-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Увеличиваем расстояние */
+}
+
+/* Навигация */
+.footer__nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px; /* Увеличиваем расстояние между ссылками */
+  align-items: center;
+}
+
+.footer__nav a {
+  color: #ccc;
+  font-size: 16px; /* Увеличиваем шрифт */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__nav a:hover {
+  color: #fff;
+}
+
+/* Подписка */
+.footer__subscribe {
+  max-width: 350px; /* Увеличиваем ширину */
+}
+
+.footer__subscribe-title {
+  color: #fff;
+  font-size: 20px; /* Увеличиваем шрифт заголовка */
+  margin-bottom: 20px; /* Увеличиваем отступ */
+  font-weight: 600;
+}
+
+.footer__subscribe-form {
+  display: flex;
+  gap: 15px; /* Увеличиваем расстояние */
+  width: 100%;
+}
+
+.footer__subscribe-input {
+  flex-grow: 1;
+  padding: 12px; /* Увеличиваем размер поля ввода */
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #ccc;
+  font-size: 16px; /* Увеличиваем шрифт */
+}
+
+.footer__subscribe-input::placeholder {
+  color: #aaa;
+}
+
+.footer__subscribe-btn {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 12px 22px; /* Увеличиваем кнопку */
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer__subscribe-btn:hover {
+  background-color: #e04343;
+}
+
+/* НИЖНЯЯ ПАНЕЛЬ */
+.footer__bottom {
+  background-color: #e32626;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px; /* Увеличиваем шрифт */
+  color: #fff;
+}
+
+.footer__bottom-social a {
+  margin-left: 15px; /* Увеличиваем отступ между иконками */
+}
+
+.footer__bottom-social img {
+  height: 20px; /* Увеличиваем иконки */
+  width: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__contact, .footer__nav-subscribe {
+    min-width: 100%;
+  }
+
+  .footer__floating-logo {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__contact p, .footer__nav a, .footer__subscribe-title {
+    font-size: 14px; /* Меньше шрифты на мобильных */
+  }
+}

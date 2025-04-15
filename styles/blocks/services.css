@@ -1,0 +1,90 @@
+/* Фон секции: сверху – градиент от чёрного к красному, снизу – белый */
+.services {
+  background: linear-gradient(
+    to bottom,
+    #1a1a1a 0%,
+    #3a1c1c 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+  padding: 60px 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.services__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services__title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff4d4d;
+  margin: 0;
+}
+
+/* Сетка карточек: 4 колонки для десктопа */
+.services__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Сами карточки */
+.services__card {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  
+  /* Начальное состояние для анимации */
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+/* Появление карточки */
+.services__card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.services__card-icon {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.services__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.services__card-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Адаптив: 2 колонки на планшетах и 1 колонка на мобильных устройствах */
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services__title {
+    font-size: 36px;
+  }
+}

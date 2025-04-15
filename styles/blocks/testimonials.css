@@ -1,0 +1,153 @@
+/* Общие стили для секции Testimonials */
+.testimonials {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background-color: #fff;
+}
+
+.testimonials__content {
+  max-width: 40%;
+}
+
+.testimonials__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.testimonials__title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ff4d4d;
+  display: block;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.testimonials__text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.testimonials__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.testimonials__btn:hover {
+  background-color: #e04343;
+}
+
+/* Стили для слайдера */
+.testimonials__slider {
+  max-width: 55%;
+  position: relative;
+}
+
+/* Стили для Swiper контейнера, изменяем эффект слайда на fade */
+.testimonials-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  /* Если используется эффект fade, свойства слайдов обрабатываются автоматически */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Карточка отзыва */
+.testimonials__card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.testimonials__card-content {
+  text-align: left;
+}
+
+.testimonials__card-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testimonials__card-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.testimonials__card-quote {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Центрированная и стилизованная пагинация */
+.swiper-pagination {
+  bottom: 10px !important;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ff4d4d;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .testimonials__content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials__slider {
+    max-width: 100%;
+  }
+
+  .testimonials__title {
+    font-size: 36px;
+  }
+}

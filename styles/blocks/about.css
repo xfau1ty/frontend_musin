@@ -1,0 +1,112 @@
+/* Оформление секции about */
+.about {
+  padding: 80px 40px;
+  background: linear-gradient(90deg, #ffffff, #f9f9f9);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.about__content {
+  flex: 1 1 45%;
+}
+
+.about__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  position: relative;
+  text-align: center; /* Центрируем заголовок */
+}
+
+.about__title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ff4d4d;
+  display: block;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.about__text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 10px;
+  text-align: center; /* Центрируем текст */
+}
+
+.about__stats {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center; /* Центрируем статистику по горизонтали */
+  align-items: center; /* Центрируем статистику по вертикали */
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about__stat-item {
+  flex: 1 1 30%;
+  min-width: 120px;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about__stat-item:hover {
+  transform: translateY(-10px); /* Лёгкий эффект подъёма при наведении */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+.about__stat-number {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ff4d4d;
+  margin-bottom: 6px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.about__stat-item:hover .about__stat-number {
+  transform: scale(1.1); /* Увеличение числа при наведении */
+}
+
+.about__stat-text {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .about__content,
+  .about__stats {
+    flex: 1 1 100%;
+  }
+
+  .about__title {
+    font-size: 36px;
+  }
+
+  .about__stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__stat-item {
+    text-align: center;
+  }
+}
