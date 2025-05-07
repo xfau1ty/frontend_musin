@@ -28,10 +28,16 @@
     .certifications__grid {
         gap: 20px;
         padding: 0 20px;
+        justify-content: space-between;
     }
     
     .certifications__item {
-        width: 120px;
+        width: calc(33.33% - 13.33px);
         height: 120px;
+        min-width: 100px;
+    }
+    
+    .certifications__item:nth-child(n+4) {
+        width: calc(50% - 10px);
     }
 }

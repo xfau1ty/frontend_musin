@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 20px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -12,7 +12,7 @@
 }
 
 .header__logo img {
-  height: 40px;
+  height: 35px;
 }
 
 /* === Navigation === */
@@ -26,7 +26,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 25px;
+  gap: 20px;
 }
 
 .header__nav-item a,
@@ -34,11 +34,11 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  padding: 8px 16px;
-  height: 40px;
+  padding: 8px 12px;
+  height: 36px;
   display: inline-flex;
   align-items: center;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 6px;
 }
 
@@ -51,7 +51,6 @@
   color: #fff;
   border-radius: 8px;
   text-transform: uppercase;
-  transition: background-color 0.3s ease;
 }
 
 .header__nav-btn:hover {
@@ -85,6 +84,18 @@
   height: 2px;
   background-color: #333;
   border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Cross animation */
+.burger.open .burger__line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.open .burger__line:nth-child(2) {
+  opacity: 0;
+}
+.burger.open .burger__line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* === Mobile === */
@@ -94,8 +105,8 @@
   }
 
   .header__nav {
-    position: absolute;
-    top: 70px;
+    position: fixed;
+    top: 65px;
     left: 0;
     right: 0;
     background-color: #fff;
@@ -103,10 +114,11 @@
     align-items: center;
     padding: 20px;
     gap: 15px;
-    transform: translateY(-150%);
+    transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .header__nav.active {
@@ -118,23 +130,28 @@
   .header__nav-list {
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+    text-align: center;
   }
 
-  .header__nav-item {
-    margin: 0;
+  .header__nav-item a,
+  .header__nav-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
-/* === анимация крестика === */
-.burger.open .burger__line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.burger.open .burger__line:nth-child(2) {
-  opacity: 0;
-}
-.burger.open .burger__line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-.burger__line {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .header__logo img {
+    height: 30px;
+  }
+
+  .header__nav {
+    top: 55px;
+    padding: 15px;
+  }
 }

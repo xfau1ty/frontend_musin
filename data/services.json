@@ -1,0 +1,42 @@
+[
+    {
+      "icon": "img/ps_lab.png",
+      "title": "Branding Design",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sed mi posuere."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "UI/UX Design",
+      "text": "Nulla tincidunt sed mi posuere in amet turpis nunc, nisl."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "Web Development",
+      "text": "Curabitur tincidunt, purus non tincidunt, augue mi congue."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "Mobile Apps",
+      "text": "Fusce tristique metus ut leo congue, a posuere lorem pulvinar."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "SEO Optimization",
+      "text": "Praesent ultricies, sem at pulvinar lacinia, magna turpis."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "Content Marketing",
+      "text": "Aliquam erat volutpat. Duis a dui non felis."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "Consulting",
+      "text": "Maecenas sit amet pretium urna. Vivamus venenatis."
+    },
+    {
+      "icon": "img/ps_lab.png",
+      "title": "Cloud Services",
+      "text": "Donec et nulla porta, tincidunt mi et, luctus risus."
+    }
+  ]

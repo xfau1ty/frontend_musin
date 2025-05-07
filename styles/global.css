@@ -1,3 +1,14 @@
 body {
     font-family: 'Proxima Nova', sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
