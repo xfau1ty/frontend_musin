@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nixxsol Landing</title>
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     </head>
 <body class="page">
 
@@ -111,7 +112,7 @@
           <div class="services__grid" id="servicesGrid"></div>
         </section>       
 
-<section class="portfolio">
+<!-- <section class="portfolio">
   <div class="portfolio__content">
     <h2 class="portfolio__title">Portfolio</h2>
     <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur. Nunc viverra faucibus praesent elementum commodo.</p>
@@ -144,6 +145,28 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section> -->
+
+<section class="portfolio">
+  <div class="portfolio__content">
+    <h2 class="portfolio__title">Portfolio</h2>
+    <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur. Nunc viverra faucibus praesent elementum commodo.</p>
+    <a href="#" class="portfolio__btn">More Portfolio →</a>
+  </div>
+  <div class="portfolio__gallery">
+    <div class="portfolio__gallery-main swiper">
+      <div class="swiper-wrapper"></div>
+    </div>
+    <div class="portfolio__gallery-preview-wrapper">
+      <div class="portfolio__gallery-preview">
+        <img src="" alt="Превью изображения" class="portfolio__gallery-image">
+      </div>
+      <div class="portfolio__gallery-nav-buttons">
+        <button class="portfolio__gallery-nav-button" id="prevBtn">←</button>
+        <button class="portfolio__gallery-nav-button" id="nextBtn">→</button>
+      </div>
     </div>
   </div>
 </section>
@@ -300,6 +323,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- <script src="scripts/script.js"></script> -->
     <script src="scripts/script1.js"></script>
+    <script src="scripts/script2.js"></script>
     <script src="ts/script.js"></script>
 </body>
 </html>

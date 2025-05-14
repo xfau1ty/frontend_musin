@@ -1,35 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // === Инициализация Swiper с эффектом coverflow ===
-    const swiper = new Swiper('.portfolio-swiper', {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 20,
-      centeredSlides: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
-      speed: 10,
-      effect: 'coverflow',
-      coverflowEffect: {
-        rotate: 30,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 1.2,
-          spaceBetween: 30,
-        },
-      },
-    });
+    // // === Инициализация Swiper с эффектом coverflow ===
+    // const swiper = new Swiper('.portfolio-swiper', {
+    //   loop: true,
+    //   slidesPerView: 1,
+    //   spaceBetween: 20,
+    //   centeredSlides: true,
+    //   autoplay: {
+    //     delay: 4000,
+    //     disableOnInteraction: false,
+    //     pauseOnMouseEnter: true,
+    //   },
+    //   speed: 10,
+    //   effect: 'coverflow',
+    //   coverflowEffect: {
+    //     rotate: 30,
+    //     stretch: 0,
+    //     depth: 100,
+    //     modifier: 1,
+    //     slideShadows: true,
+    //   },
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    //   breakpoints: {
+    //     768: {
+    //       slidesPerView: 1.2,
+    //       spaceBetween: 30,
+    //     },
+    //   },
+    // });
 
     // === Бургер-меню ===
     const burger = document.querySelector('.burger');
